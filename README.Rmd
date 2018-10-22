@@ -2,7 +2,7 @@
 title: "KI Labs - Take home code challenge"
 subtitle: "Build an interview calendar API"
 author: Barbara Borges Ribeiro
-output: html_document
+output:  rmarkdown::github_document
 ---
 
 ```{r}

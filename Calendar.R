@@ -9,12 +9,9 @@
 # Notes: It's okay to skip the UI and authentication, and implement
 # the API only.
 
-# library(tidyverse)  -- make sure to have it installed: install.packages("tidyverse")
-# library(R6)         -- make sure to have it installed: install.packages("R6")
-
 Calendar <- R6::R6Class("Calendar",
   public = list(
-    # Register a new interviewer by adding it to the private$interviewer vector
+    # Register a new interviewer.
     # 
     # @param name A (unique) name for the interviewer
     # TODO: Make names unique in the implementation, rather than 
@@ -26,7 +23,7 @@ Calendar <- R6::R6Class("Calendar",
         private$interviewers <- c(private$interviewers, name)
       }
     },
-    # Register a new candidate by adding it to the private$candidate vector
+    # Register a new candidate.
     # 
     # @param name A (unique) name for the candidate
     # TODO: Make names unique in the implementation, rather than 
